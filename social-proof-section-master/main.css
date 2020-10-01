@@ -1,30 +1,48 @@
 .card-FB-1, .card-FB-2, .card-FB-3{
-  margin:1em;
-  padding:1em;
-  text-align: left;
+  line-height: 25px;
+  padding:2em;
   background-color:  hsl(300, 43%, 22%);
   border-radius: 10px;
-  width:20em;
-  color: hsl(0, 0%, 100%);
+  position: relative;
+  width:350px;
+  color:white;
 }
-
+.content{
+  padding-top:40px;
+}
+.card-FB-2{
+  margin-left:20px;
+  top:1em;
+}
+.card-FB-3{
+  margin-left:20px;
+  top:2em;
+}
+.feedback-org{
+  width:80%;
+  top:80px;
+  position: relative;
+  padding-left: 10%;
+  display:flex;
+  justify-content: space-evenly;
+}
 .info{
   display:flex;
 }
-.card-profile{
-
-}
 .name{
-margin-bottom: 0.5em;
+  font-weight:bold;
 }
 .type{
-
+  color:hsl(333, 80%, 67%);
 }
 .person{
   margin:1em 0em 0em 1.5em;
 }
 img{
   border-radius: 50%;
+}
+.top{
+  display:flex;
 }
 .text-card{
   margin:1em 1em 0em 1em;
@@ -35,8 +53,10 @@ img{
   border-radius: 10px;
   justify-content: space-evenly;
   display: flex;
-  width:30em;
-  padding:1em;
+  width:35em;
+  height:2.5em;
+  margin:0 0 1em 0;
+  padding:1.5em 0 0 0;
 }
 .card-rate-1{
   grid-column: 1;
@@ -53,36 +73,42 @@ img{
 .rate-text{
   font-weight: 600;
 }
-.stars{
-
-}
-.star{
-  width: 1em
-}
 .title{
-  font-size:3em;
-  font-weight: 700;
   color: hsl(300, 43%, 22%);
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
 }
 .title-main{
+  position:relative;
+  left:160px;
   padding: 2.5em 0 5em 2.5em;
-  width: 25em;
+  width: 35em;
 }
 .title-text{
-  color: #502050;
+  color:hsl(303, 10%, 53%);
+  line-height:30px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 1.25em;
 }
 .rate-org{
+  margin-top:3em;
   display: grid;
+  position: absolute;
+  right:160px;
   grid-template-columns: 3em 3em;
-  grid-row-gap: 15px;
   text-align: center;
-  margin-bottom: 2.5rem;
+  height:12em;
 }
-body{
-  font-family: "Spartan",serif;
+body {
+     background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+     background-position: top left, bottom right;
+     background-repeat: no-repeat, no-repeat;
+     font-size: 15px;
+     font-family: 'Spartan', sans-serif;
 }
-/*@media only screen and (min-width: 375px) {
-  body::before {
-    content: url("./images/bg-pattern-bottom-desktop.svg");
+@font-face {
+    font-family: Spartan;
+    src: url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
   }
-}
